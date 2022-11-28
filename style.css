@@ -1,0 +1,70 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+}
+.conteiner{
+    background-color: white;
+    display: grid;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+.item{
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    /* height: 350px; */
+    margin: auto;
+    margin-top: 5px;
+    background-color: whitesmoke;
+}
+
+.itemPortada{
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(remera-love-unites-trifolio-unisex.jpg);
+    height: 383px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-start;
+
+}
+.itemPrecio{
+    margin-left: 5px;
+    padding: 3px 3px 3px 3px;
+    height: fit-content;
+    width: fit-content;
+    display: block;
+    background-color: whitesmoke;
+}
+.itemTitulo h2{
+    margin: 5px 2px;
+}
+.itemTitulo{
+    font-size: smaller;
+}
+.itemContenido p{
+    margin: 5px 2px;
+}
+.itemContenido{
+    color: grey;
+}
+.itemDetalle{
+    margin: 5px 2px;
+}
+@media (min-width: 600px) {
+    .titulo{
+        display: none;
+    }
+    .conteiner{
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 460px;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    }   
+}
+
